@@ -15,11 +15,13 @@
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="./vendor/slick/slick.css" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -35,25 +37,30 @@
   <!-- Header -->
   <header class="masthead">
     <div class="cover">
-    <video autoplay preload loop mute poster="./img/team/ben.png">
+    <video autoplay preload loop mute poster="./img/posters/hero.png">
         <source src="./videos/marquee-edit_617.mp4" type="video/mp4" />
         <!-- <source src="path/to/video.webm" type="video/webm" />
         <source src="path/to/video.ogv" type="video/ogg" /> -->
-        <img src="./img/team/ben.png" alt="" />
+        <img src="./img/posters/hero.png" alt="" />
     </video>
     </div>
   </header>
 
   <!-- Mobile App -->
-  <section class="page-section remove-top-padding" id="services">
+  <section class="page-section" id="services">
     <div class="container">
       <div class="row align-middle">
         <div class="col-sm-5">
-            <h3 class="section-subheading text-muted">Mobile App</h3>
-            <h2 class="section-heading">Devils Backbone Brewing - AR Packaging</h2>
-          <p class="text-muted">Devils Backbone had a new brand campaign, Slow by Nature, a great-tasting product with shiny new packaging featuring stunning illustrative artwork. Each package had a character that had a story to tell. So, it turned to R&R Partners to create an augmented reality experience that would bring that packaging to life, letting users interact with its product in a way they never could before, while telling a brand story in a new, compelling space – on its packaging.</p>
+            <h3 class="section-subheading text-muted" data-aos="fade-down">Mobile App</h3>
+            <h2 class="section-heading" data-aos="fade-down">Devils Backbone Brewing - AR Packaging</h2>
+          <p class="text-muted" data-aos="fade-up">Devils Backbone had a new brand campaign, Slow by Nature, a great-tasting product 
+            with shiny new packaging featuring stunning illustrative artwork. Each package had a character that 
+            had a story to tell. So, it turned to R&R Partners to create an augmented reality experience that 
+            would bring that packaging to life, letting users interact with its product in a way they never 
+            could before, while telling a brand story in a new, compelling space – on its packaging.</p>
+            <a href="#"></a>
         </div>
-        <div class="col-sm-7 video-wrapper">
+        <div class="col-sm-7 video-wrapper" data-aos="fade-left">
                 <video autoplay preload loop mute poster="./img/posters/hero.png">
                   <source src="./videos/DBB-BG.mp4" type="video/mp4" />
                   <!-- <source src="path/to/video.webm" type="video/webm" />
@@ -64,15 +71,15 @@
   </section>
 
   <!-- Spark AR -->
-  <section class="bg-dark page-section add-vheight remove-top-padding" id="spark-ar">
+  <section class="bg-dark page-section">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 add-zindex-2 align-middle">
-            <h3 class="section-subheading text-muted">Spark AR</h3>
-            <h2 class="section-heading">Boeing - AR Cabin Reveal</h2>
-            <p>For the rollout of its new 777X, Boeing launched a series of augmented reality effects that offered visitors an exclusive behind-the-scenes look at its stunning interior. Users interacted with content hot spots throughout the cabin to explore and learn more about all the features of the 777X.</p>
+            <h3 class="section-subheading text-muted" data-aos="fade-down">Spark AR</h3>
+            <h2 class="section-heading" data-aos="fade-down">Boeing - AR Cabin Reveal</h2>
+            <p data-aos="fade-up">For the rollout of its new 777X, Boeing launched a series of augmented reality effects that offered visitors an exclusive behind-the-scenes look at its stunning interior. Users interacted with content hot spots throughout the cabin to explore and learn more about all the features of the 777X.</p>
         </div>
-        <div class="col-sm-6 video-wrapper">
+        <div class="col-sm-6 video-wrapper" data-aos="fade-left">
             <video class="add-zindex-1 spark-ar" autoplay preload loop mute poster="./img/posters/cabin.png">
               <source src="./videos/boeing-777x-bg_416.mp4" type="video/mp4" />
               <img src="./img/posters/cabin.png" alt="" />
@@ -81,9 +88,9 @@
       </div>
   </section>
 
-    <!-- Spark AR -->
-    <section class="page-section remove-top-padding" style="padding: 0;">
-        <div class="container remove-margins">
+    <!-- Stella Web AR -->
+    <section class="page-section remove-top-padding">
+        <div class="container">
           <div class="row">
             <div class="col-sm-12">
                 <video class="" autoplay preload loop mute poster="./img/posters/stella-poster.png">
@@ -94,27 +101,42 @@
           </div>
       </section>
 
+        <!-- Stella Web AR Continued -->
+  <section class="page-section remove-top-padding" id="services">
+    <div class="container">
+      <div class="row align-middle">
+        <div class="col-sm-6">
+            <h3 class="section-subheading text-muted">Web App</h3>
+            <h2 class="section-heading">Stella Artois - AR Chalise</h2>
+          <p class="text-muted">Through the Better World campaign, Stella Artois has helped provide access to clean water for more than 1.7 million people in the developing world. To help further its goal to #PourItForward, it turned to R&R Partners to develop an augmented reality experience that tells the story of what it’s like to live in a world without clean running water.</p>
+          <p>The experience starts with a QR code. From there, users are introduced to the campaign spokesperson, Matt Damon, via simulated FaceTime, and are then transported into the rich, artistic narrative driving action and brand impact.</p>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; R&R Partners 2019</span>
+          <span class="copyright">&copy 2019 R&R Partners. All rights reserved.</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
+              <a target="_blank" href="https://www.instagram.com/rrpartners/">
+                <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a target="_blank" href="https://www.facebook.com/rrpartners/">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a target="_blank" href="https://www.linkedin.com/company/r&r-partners/">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -122,12 +144,6 @@
         </div>
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -143,8 +159,12 @@
 
   <script type="text/javascript" src="./vendor/slick/slick.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+
 
 </body>
 

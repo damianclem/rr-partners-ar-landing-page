@@ -48,3 +48,8 @@
   })
 
 })(jQuery); // End of use strict
+
+AOS.init({
+  duration: 800,
+  once: false
+});

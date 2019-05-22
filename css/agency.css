@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 p {
@@ -42,22 +42,6 @@ h6 {
   z-index: 1 !important;
 }
 
-#spark-ar video {
-  width: 66%;
-  left: 60%;
-  height: 300px !important;
-}
-
-@media (max-width: 992px) {
-  #spark-ar video {
-    -webkit-transform: translate(-55%);
-    transform: translate(-55%);
-    width: auto;
-    left: inherit;
-    height: 500px;
-  }
-}
-
 .page-section {
   padding: 100px 0;
 }
@@ -70,9 +54,6 @@ h6 {
   .page-section .container {
     max-width: 100%;
   }
-  .page-section .container.remove-top-padding {
-    padding-top: 0;
-  }
 }
 
 .page-section .remove-margins {
@@ -81,7 +62,7 @@ h6 {
 }
 
 .page-section.add-vheight {
-  height: 60vh;
+  height: 75vh;
   position: relative;
   overflow: hidden;
 }
@@ -102,37 +83,16 @@ h6 {
 }
 
 .page-section .video-wrapper video {
-  height: 0vh;
-  width: 100vw;
   -o-object-fit: cover;
   object-fit: cover;
-  overflow: hidden;
-  position: absolute;
-  /* bottom: -78px; */
-  right: 0;
-  z-index: -1;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
 }
 
 @media (max-width: 992px) {
   .page-section .video-wrapper video {
-    -webkit-transform: translate(-29%);
-    transform: translate(-29%);
-    position: inherit;
-    height: 500px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 768px) {
-  .page-section .video-wrapper video {
-    -webkit-transform: translate(-45%);
-    transform: translate(-45%);
   }
 }
 
@@ -160,7 +120,9 @@ h6 {
 }
 
 @media (max-width: 992px) {
-  .page-section .row .col-sm-6, .page-section .row .col-sm-5, .page-section .row .col-sm-7 {
+  .page-section .row .col-sm-6,
+  .page-section .row .col-sm-5,
+  .page-section .row .col-sm-7 {
     max-width: 100% !important;
   }
 }
@@ -190,6 +152,10 @@ h6 {
   }
 }
 
+.page-section.remove-top-padding {
+  padding: 0 !important;
+}
+
 @media (max-width: 992px) {
   .page-section {
     padding: 50px 0;
@@ -203,7 +169,6 @@ h6 {
 }
 
 .btn {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
 }
 
@@ -251,7 +216,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #mainNav .navbar-toggler {
@@ -262,12 +227,10 @@ img::-moz-selection {
   color: white;
   border: 0;
   background-color: #fed136;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand {
   color: #fed136;
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand .logo {
@@ -284,7 +247,6 @@ img::-moz-selection {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: white;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -311,7 +273,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -353,7 +315,6 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 header.masthead .intro-text .intro-heading {
@@ -361,7 +322,6 @@ header.masthead .intro-text .intro-heading {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 @media (min-width: 768px) {
@@ -374,14 +334,12 @@ header.masthead .intro-text .intro-heading {
     font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
-    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
 
@@ -454,7 +412,6 @@ header.masthead .intro-text .intro-heading {
   font-size: 16px;
   font-style: italic;
   margin: 0;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #portfolio * {
@@ -494,7 +451,6 @@ header.masthead .intro-text .intro-heading {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -791,25 +747,21 @@ section#contact .form-control:focus {
 section#contact ::-webkit-input-placeholder {
   font-weight: 700;
   color: #ced4da;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 section#contact :-moz-placeholder {
   font-weight: 700;
   color: #ced4da;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 section#contact ::-moz-placeholder {
   font-weight: 700;
   color: #ced4da;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .footer {
@@ -821,7 +773,6 @@ section#contact :-ms-input-placeholder {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .footer ul.quicklinks {
@@ -829,7 +780,6 @@ section#contact :-ms-input-placeholder {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 ul.social-buttons {

@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.8.2",
-      "/source/rr-partners-ar-landing-page"
+      "/Source/rrpartners-ar-lander"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.8.2",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.2.tgz",
   "_spec": "5.8.2",
-  "_where": "/source/rr-partners-ar-landing-page",
+  "_where": "/Source/rrpartners-ar-lander",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",

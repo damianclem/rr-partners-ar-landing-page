@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  background-color: black;
+  background-color: rgba(0,0,0,.9);
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -9,14 +9,14 @@
     color: white;
     border: 0;
     background-color: $primary;
-    @include heading-font;
+    // @include heading-font;
   }
   .navbar-brand {
     .logo{
       width: 200px;
     }  
     color: $primary;
-    @include script-font;
+    // @include script-font;
     &.active,
     &:active,
     &:focus,
@@ -32,7 +32,7 @@
         padding: 0.75em 0;
         letter-spacing: 1px;
         color: white;
-        @include heading-font;
+        // @include heading-font;
         &.active,
         &:hover {
           color: $primary;
@@ -66,7 +66,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $black;
+      background-color: rgba(0,0,0,0.9);
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
