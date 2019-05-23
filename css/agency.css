@@ -43,7 +43,15 @@ h6 {
 }
 
 .page-section {
+  height: 80vh;
   padding: 100px 0;
+}
+
+.page-section video {
+  position: relative;
+  -o-object-fit: initial;
+  object-fit: initial;
+  width: 100%;
 }
 
 .page-section .container {
@@ -73,29 +81,6 @@ h6 {
   }
 }
 
-.page-section .video-wrapper {
-  overflow: hidden;
-  position: inherit;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-}
-
-.page-section .video-wrapper video {
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-@media (max-width: 992px) {
-  .page-section .video-wrapper video {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-}
-
 .page-section .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,10 +89,6 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-}
-
-.page-section .row video {
-  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -130,6 +111,14 @@ h6 {
 .page-section.bg-dark {
   background-color: #000 !important;
   color: #fff;
+}
+
+.page-section.bg-dark .rr-logo-fill {
+  fill: rgba(240, 240, 240, 0.2);
+}
+
+.page-section.bg-dark .rr-logo-circle {
+  stroke: rgba(240, 240, 240, 0.2);
 }
 
 .page-section h2.section-heading {
@@ -159,6 +148,7 @@ h6 {
 @media (max-width: 992px) {
   .page-section {
     padding: 50px 0;
+    height: inherit;
   }
 }
 
@@ -213,6 +203,40 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.rr-logo-svg {
+  position: absolute;
+  width: 550px;
+  z-index: 0;
+  left: -181px;
+}
+
+@media (max-width: 768px) {
+  .rr-logo-svg {
+    width: 300px;
+    margin-top: 353px;
+    left: -100px;
+  }
+}
+
+.rr-logo-circle {
+  fill: none;
+  stroke: rgba(240, 240, 240, 0.5);
+  stroke-miterlimit: 10;
+  stroke-width: 15px;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+
+.rr-logo-fill {
+  fill: rgba(240, 240, 240, 0.5);
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
 }
 
 #mainNav {

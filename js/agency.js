@@ -53,3 +53,19 @@ AOS.init({
   duration: 800,
   once: false
 });
+
+$('.ar-chalise').slick({
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000
+  // rtl: true
+});
+
+/* 
+  Animate Logo Watermark
+*/
+// new Vivus('rr-logo-svg', {
+//   type: 'delayed',
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_OUT
+// });

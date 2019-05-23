@@ -38,26 +38,22 @@ h6 {
   z-index: 1 !important;
 }
 
-// #spark-ar {
-//   video {
-//     width: 90%;
-//     left: 50%;
-//     height: 48vh !important;
-
-//     @media(max-width:992px) {
-//       transform: translate(-50%);
-//       width: auto;
-//       left: inherit;
-//       height: 50vh;
-//     }
-//   }
-// }
-
 .page-section {
+
+  height: 80vh;
+  padding: 100px 0;
+
+  video {
+    position: relative;
+    object-fit: initial;
+        width: 100%;
+    // @media (max-width: 992px) {
+    //   width: 100%;
+    // }
+  }
 
   .container {
     height: 100%;
-
     @media (max-width: 992px) {
       max-width: 100%;
     }
@@ -79,36 +75,10 @@ h6 {
     }
   }
 
-  .video-wrapper {
-    overflow: hidden;
-    position: inherit;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-
-    video {
-      object-fit: cover;
-
-      @media(max-width:992px) {
-        flex-direction: column-reverse;
-      }
-
-      @media(max-width:768px) {
-        // transform: translate(-45%);      
-      }
-    }
-
-  }
-
   .row {
     display: flex;
     align-items: center;
     height: 100%;
-
-    video {
-      width: 100%;
-    }
 
     @media(max-width:992px) {
       flex-direction: column-reverse;
@@ -118,7 +88,6 @@ h6 {
     .col-sm-5,
     .col-sm-7 {
       @media(max-width:992px) {
-
         max-width: 100% !important;
       }
     }
@@ -127,9 +96,13 @@ h6 {
   &.bg-dark {
     background-color: #000 !important;
     color: #fff;
+    .rr-logo-fill {
+      fill: rgba(240, 240, 240, .2);
+    }
+    .rr-logo-circle {
+      stroke: rgba(240, 240, 240, .2);
+    }
   }
-
-  padding: 100px 0;
 
   h2.section-heading {
     font-weight: 400;
@@ -157,7 +130,10 @@ h6 {
 
   @media(max-width:992px) {
     padding: 50px 0;
+    height: inherit;
+
   }
+
 
 }
 
@@ -213,4 +189,56 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+// .rr-logo {
+//   position: absolute;
+//   width: 647px;
+//   z-index: -1;
+//   left: -181px;
+
+//   #rr-logo {
+//     fill: none;
+//     stroke: #c4c4c4;
+//   }
+
+//   .cls-1 {
+//     fill: none;
+//     stroke: #c4c4c4;
+//     stroke-miterlimit: 10;
+//     stroke-width: 15px;
+//   }
+
+// }
+
+.rr-logo-svg {
+  position: absolute;
+  width: 550px;
+  z-index: 0;
+  left: -181px;
+  @media (max-width: 768px) {
+    width: 300px;
+    margin-top: 353px;
+    left: -100px;
+  }
+}
+
+.rr-logo-circle {
+  fill: none;
+  stroke:rgba(240, 240, 240, .5);
+  stroke-miterlimit: 10;
+  stroke-width: 15px;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+
+}
+
+.rr-logo-fill {
+  fill:rgba(240, 240, 240, .5);
+  stroke-linejoin:round;
+  stroke-linecap:round;
+  stroke-width:1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
 }

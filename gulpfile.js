@@ -99,8 +99,6 @@ function js() {
     .src([
       './js/*.js',
       '!./js/*.min.js',
-      '!./js/contact_me.js',
-      '!./js/jqBootstrapValidation.js'
     ])
     .pipe(uglify())
     .pipe(header(banner, {
@@ -116,7 +114,7 @@ function js() {
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch("./js/**/*", js);
+  gulp.watch("./js/agency.js", js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
