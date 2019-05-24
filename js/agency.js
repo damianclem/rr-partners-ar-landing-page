@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
-
+  
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -57,8 +57,17 @@ AOS.init({
 $('.ar-chalise').slick({
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 3000
+  autoplaySpeed: 3000,
+  dots: true
   // rtl: true
+});
+
+
+videos = document.getElementsByTagName('video');
+
+$.each( videos, function( key, value ) {
+  console.log(videos[key].play())
+  // alert( key + ": " + value );
 });
 
 /* 

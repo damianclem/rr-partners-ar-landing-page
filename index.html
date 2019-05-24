@@ -17,7 +17,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet"
     type="text/css">
-  <link rel="stylesheet" type="text/css" href="./vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
@@ -40,15 +40,15 @@
   <!-- Header -->
   <header class="masthead">
     <div class="cover">
-      <video autoplay preload loop mute poster="./img/posters/hero.png">
+      <video id="video" autoplay loop muted playsinline poster="./img/posters/hero.png">
         <source src="./videos/marquee-edit_617.mp4" type="video/mp4" />
-        <img src="./img/posters/hero.png" alt="" />
+        <!-- <img src="./img/posters/hero.png" alt="" /> -->
       </video>
     </div>
   </header>
 
   <!-- Mobile App -->
-  <section class="page-section" id="services">
+  <section class="page-section">
 
     <svg id="rr-logo-svg" class="rr-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.51 340.51">
       <path class="rr-logo-fill"
@@ -70,9 +70,8 @@
           <a href="#"></a>
         </div>
         <div class="col-sm-6">
-          <video autoplay preload loop mute poster="./img/posters/hero.png">
+          <video autoplay loop muted playsinline poster="./img/posters/hero.png">
             <source src="./videos/DBB-BG-02.mp4" type="video/mp4" />
-            <img src="./img/posters/hero.png" alt="" />
           </video>
         </div>
   </section>
@@ -100,9 +99,8 @@
             content hot spots throughout the cabin to explore and learn more about all the features of the 777X.</p>
         </div>
         <div class="col-sm-6 video-wrapper">
-          <video lass="" autoplay preload loop mute poster="./img/posters/cabin.png">
-            <source src="./videos/boeing-777x-bg_416.mp4" type="video/mp4" />
-            <img src="./img/posters/cabin.png" alt="" />
+          <video lass="" autoplay loop muted playsinline poster="./img/posters/cabin.png">
+            <source src="./videos/boeing-777x-cabin.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -113,7 +111,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <video class="" autoplay preload loop mute poster="./img/posters/stella-poster.png">
+          <video class="" autoplay loop muted playsinline poster="./img/posters/stella-poster.png">
             <source src="./videos/stella-marquee-3_959.mp4" type="video/mp4" />
             <img src="./img/posters/stella-poster.png" alt="" />
           </video>
@@ -122,7 +120,7 @@
   </section>
 
   <!-- Stella Web AR Continued -->
-  <section class="page-section remove-top-padding" id="services">
+  <section class="page-section remove-top-padding">
 
     <svg id="rr-logo-svg" class="rr-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.51 340.51">
       <path class="rr-logo-fill"
@@ -143,23 +141,101 @@
             Damon, via simulated FaceTime, and are then transported into the rich, artistic narrative driving action and
             brand impact.</p>
         </div>
-        <div class="col-sm-6 center-text">
+        <div class="col-sm-6">
           <div class="ar-chalise">
             <div>
               <img src="./img/stella/stella-ar-agegate-phone-mock_1.png" alt="">
             </div>
             <div>
-                <img src="./img/stella/stella-ar-hotspot-phone-mock.png" alt="">
-              </div>
+              <img src="./img/stella/stella-ar-hotspot-phone-mock.png" alt="">
+            </div>
             <div>
-                <img src="./img/stella/stella-ar-xp-phone-mock.png" alt="">
-              </div>
+              <img src="./img/stella/stella-ar-xp-phone-mock.png" alt="">
+            </div>
           </div>
         </div>
   </section>
 
+
+  <!-- Estrella Jalisco - AR Michelada -->
+  <section class="bg-dark page-section">
+
+    <svg class="rr-logo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" viewBox="0 0 340.5 340.5" xml:space="preserve">
+      <circle class="rr-logo-circle" cx="170.3" cy="170.3" r="162.8" />
+      <path class="rr-logo-fill" d="M217.8,170.9h-19.7c-0.8,7.3-2.4,14.4-4.9,21.3l-21.1-26.3c13.3-7.1,24.5-18.7,24.5-35c0-22.2-16.6-33.2-34.5-33.2
+       c-18.8,0-34.1,13-34.1,33c0,12.1,6.9,21.2,13.9,30.4c-15.8,8.1-31.8,20.7-31.8,40.1c0,26,18.4,41.3,43.8,41.3
+       c16.2,0,28.7-5.8,38.9-18.3l12.5,15.5h26.3L206,207.9C212,198.2,216.5,182.9,217.8,170.9z M162.8,114.3c8.4,0,14.1,6.8,14.1,16
+       c0,11.2-8.1,16.9-16.3,22.6c-5-6.9-12.6-14.1-12.6-23.1C148,120.2,154.6,114.3,162.8,114.3z M154.8,225.1
+       c-12.9,0-22.5-8.5-22.5-23.4c0-16.5,13.2-21.1,21.3-26.2l28.8,35.6C176.7,217.1,169.2,224.8,154.8,225.1z" />
+    </svg>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 align-middle">
+          <h3 class="section-subheading text-muted" data-aos="fade-down">Web AR</h3>
+          <h2 class="section-heading" data-aos="fade-down">Estrella Jalisco - AR Michelada</h2>
+          <p data-aos="fade-up">To create excitement around the release of Mango Michelada, R&R Partners developed a
+            mobile augmented reality experience that allowed users to engage with the brand and connect with LA culture.
+            Players could skate around a physical can, tapping to ollie and racking up points. Their scores were visible
+            on a global leaderboard. On average, users spent two minutes per visit, doing sweet tricks around their
+            refreshing Micheladas.</p>
+        </div>
+        <div class="col-sm-6 video-wrapper">
+          <video lass="" autoplay loop muted playsinline poster="./img/posters/cabin.png">
+            <source src="./videos/michelada-mock_673.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+  </section>
+
+  <!-- Facebook - AR Mural -->
+  <section class="page-section">
+
+    <svg id="rr-logo-svg" class="rr-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.51 340.51">
+      <path class="rr-logo-fill"
+        d="M225.33,145.16v-.35c0-11.89-4.12-22-11.31-29.44-8.77-8.6-22.26-13.66-39.39-13.66H113.75V238.2h24V190.62H167l38.39,47.58,27.39,0-40.93-50.82C210.74,181.92,225.33,167.53,225.33,145.16ZM137.77,169.3V123.49h34.86c17.78,0,28.32,8,28.32,22.61v.47c0,13.78-10.95,22.73-28.09,22.73Z" />
+      <circle class="rr-logo-circle" cx="170.26" cy="170.26" r="162.76" />
+    </svg>
+
+    <div class="container">
+      <div class="row align-middle">
+        <div class="col-sm-6">
+  
+
+            <div class="row">
+                <div class="col-md-12" style="margin-bottom: 20px">
+                  <img src="./img/facebook/oculus-hq_orig.png" style="width: 100%" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6" style="margin-bottom: 20px"><img src="./img/facebook/fb-air-01_orig.png"
+                    style="width: 100%" alt=""></div>
+                <div class="col-md-6" style="margin-bottom: 20px"><img src="./img/facebook/fb-air-02_orig.png"
+                    style="width: 100%" alt=""></div>
+              </div>
+              
+        </div>
+        <div class="col-sm-6">
+
+            <h3 class="section-subheading text-muted" data-aos="fade-down">Spark AR</h3>
+            <h2 class="section-heading" data-aos="fade-down">Facebook - AR Mural</h2>
+            <p class="" data-aos="fade-up">To add an engaging digital component to its Artist in Residence program,
+              Facebook partnered with R&R to create its first ever augmented reality world effect. We worked with artist
+              Adam Friedman to break the boundaries between physical and digital reality, allowing users to dive into
+              alternate dimensions within a wall mural at Facebook’s Seattle campus.</p>
+  
+            <video controls loop playsinline>
+              <source src="./videos/facebook-air-demo_732.mp4" type="video/mp4" />
+            </video>
+  
+            <a href="#"></a>
+
+        </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer page-section">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -199,7 +275,7 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <script type="text/javascript" src="./vendor/slick/slick.js"></script>
+  <script type="text/javascript" src="./js/slick/slick.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/vivus/0.2.1/vivus.min.js"></script>
