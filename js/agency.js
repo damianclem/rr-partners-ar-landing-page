@@ -63,10 +63,15 @@ $('.ar-chalise').slick({
 });
 
 
-videos = document.getElementsByTagName('video');
+// videos = document.getElementById('vid2');
 
-$.each( videos, function( key, value ) {
-  console.log(videos[key].play())
+videos = $('video');
+console.log(videos)
+// video[0].play();
+videos.each( function( key, value ) {
+  console.log($(value))
+  $(value)[0].play()
+  // value[0].play()
   // alert( key + ": " + value );
 });
 
