@@ -1,25 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
   
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
@@ -39,21 +20,16 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Hide navbar when modals trigger
-  $('.portfolio-modal').on('show.bs.modal', function(e) {
-    $('.navbar').addClass('d-none');
-  })
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
-    $('.navbar').removeClass('d-none');
-  })
-
 })(jQuery); // End of use strict
 
+
+// Slide in effects for page content
 AOS.init({
   duration: 800,
   once: false
 });
 
+// Slick Slider
 $('.ar-chalise').slick({
   arrows: false,
   autoplay: true,
@@ -62,24 +38,29 @@ $('.ar-chalise').slick({
   // rtl: true
 });
 
-
-// videos = document.getElementById('vid2');
-
-videos = $('video');
-console.log(videos)
-// video[0].play();
-videos.each( function( key, value ) {
-  console.log($(value))
-  $(value)[0].play()
-  // value[0].play()
-  // alert( key + ": " + value );
+// Play or Pause videos when in view
+$(window).scroll(function() {
+  $('video').each(function() {
+      if ($(this).visible(true)) {
+          $(this)[0].play();
+      } else {
+          $(this)[0].pause();
+      }
+  })
 });
 
-/* 
-  Animate Logo Watermark
-*/
-// new Vivus('rr-logo-svg', {
-//   type: 'delayed',
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_OUT
+
+// const showTextFill = () => {
+//   textFill.classList.add('is-active');
+// };
+
+// new Vivus('rr-logo', {
+//   duration: 70,
+//   animTimingFunction: Vivus.EASE,
 // });
+
+new Vivus('rr-logo', {
+  type: 'scenario'
+},   function() {
+  console.log('yep')
+});
