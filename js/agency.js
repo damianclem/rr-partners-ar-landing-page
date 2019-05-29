@@ -1,6 +1,6 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
-  
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
@@ -8,7 +8,7 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -39,28 +39,26 @@ $('.ar-chalise').slick({
 });
 
 // Play or Pause videos when in view
-$(window).scroll(function() {
-  $('video').each(function() {
-      if ($(this).visible(true)) {
-          $(this)[0].play();
-      } else {
-          $(this)[0].pause();
-      }
+$(window).scroll(function () {
+  $('video').each(function () {
+    if ($(this).visible(true)) {
+      $(this)[0].play();
+    } else {
+      $(this)[0].pause();
+    }
   })
 });
 
-
-// const showTextFill = () => {
-//   textFill.classList.add('is-active');
-// };
-
-// new Vivus('rr-logo', {
-//   duration: 70,
-//   animTimingFunction: Vivus.EASE,
-// });
-
 new Vivus('rr-logo', {
-  type: 'scenario'
-},   function() {
-  console.log('yep')
+  type: 'async',
+  duration: 100,
+}, function () {
+
+  $('#rr-logo').fadeOut(200);
+  $('.preloader-container').addClass('is-over');
+
+  setTimeout(function(){
+    $('.preloader-container').fadeOut(200);
+  }, 1500)
+
 });
