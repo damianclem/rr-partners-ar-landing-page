@@ -90,15 +90,15 @@ $('.targets').slick({
 
 
 // Play or Pause videos when in view
-$(window).scroll(function () {
-  $('video').each(function () {
-    if ($(this).visible(true)) {
-      $(this)[0].play();
-    } else {
-      $(this)[0].pause();
-    }
-  })
-});
+// $(window).scroll(function () {
+//   $('video').each(function () {
+//     if ($(this).visible(true)) {
+//       $(this)[0].play();
+//     } else {
+//       $(this)[0].pause();
+//     }
+//   })
+// });
 
 
 // Targets Modal
