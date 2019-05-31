@@ -78,14 +78,16 @@ $(window).scroll(function () {
 
 // Targets Modal
 
-var $triggerOn = document.querySelector('#open_targets_modal');
-var $triggerOff = document.querySelector('.button--close');
-var $modal   = document.querySelector('aside');
+var $triggerOn = $('#open_targets_modal');
+var $triggerOff = $('.button--close');
+var $modal   = $('aside');
 
 function toggleModal(e){
 
+  console.log('clicked');
+
   e.preventDefault()
-  $modal.classList.toggle('is-open');
+  $modal.toggleClass('is-open');
 
   if ($('.targets_modal').hasClass('is-open')) {
     $('body').css('overflow', 'hidden');
@@ -94,8 +96,9 @@ function toggleModal(e){
   }
 }
 
-$triggerOn.addEventListener('click touchend', toggleModal );
-$triggerOff.addEventListener('click touchend', toggleModal );
+$triggerOn.on('click touchstart', toggleModal );
+
+$triggerOff.on('click touchstart', toggleModal );
 
 new Vivus('rr-logo', {
   type: 'async',
