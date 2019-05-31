@@ -116,9 +116,10 @@ $transition-ease: ease;
   justify-content: center;
 
   .ar-chalise img {
-    height: calc(50vh - 100px);
-    width: auto;
+    // height: calc(50vh - 100px);
+    width: 100%;
     margin: 0 auto;
+    padding: 5px;
     /* it centers any block level element */
   }
 

@@ -138,9 +138,9 @@ h6 {
 }
 
 .page-section .ar-chalise img {
-  height: calc(50vh - 100px);
-  width: auto;
+  width: 100%;
   margin: 0 auto;
+  padding: 5px;
   /* it centers any block level element */
 }
 
