@@ -73,8 +73,13 @@
     }
 
     .targets img {
-        height: calc(90vh - 150px);
-        width: auto;
+        // height: calc(90vh - 150px);
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        height: auto;
+        width: 100%;
+        max-width: 800px;
         margin: 0 auto;
     }
 

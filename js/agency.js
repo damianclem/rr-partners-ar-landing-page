@@ -100,16 +100,16 @@ $triggerOn.on('click touchstart', toggleModal );
 
 $triggerOff.on('click touchstart', toggleModal );
 
-new Vivus('rr-logo', {
-  type: 'async',
-  duration: 100,
-}, function () {
+// new Vivus('rr-logo', {
+//   type: 'async',
+//   duration: 100,
+// }, function () {
 
-  $('#rr-logo').fadeOut(200);
+//   $('#rr-logo').fadeOut(200);
   $('.preloader-container').addClass('is-over');
 
-  setTimeout(function(){
-    $('.preloader-container').fadeOut(200);
-  }, 1500)
+//   setTimeout(function(){
+//     $('.preloader-container').fadeOut(200);
+//   }, 1500)
 
-});
+// });
