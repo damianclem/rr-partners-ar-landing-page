@@ -1,6 +1,23 @@
 (function ($) {
   "use strict"; // Start of use strict
 
+  $('#submitpassword').on('click', function(){
+
+    var password = $('#password').val();
+
+    if (password === 'brian') {
+
+      $('.enter-exp').fadeOut();
+      $('.targets').removeClass('hide');
+
+    } else {
+      $('#password').css({
+        'border': '1px solid red'
+      })
+    }
+  
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
@@ -38,6 +55,15 @@ $('.ar-chalise').slick({
   // rtl: true
 });
 
+$('.targets').slick({
+  arrows: true,
+  nextArrow: '<i class="fa fa-chevron-right slick-next"></i>',
+  prevArrow: '<i class="fa fa-chevron-left slick-prev"></i>',
+  autoplay: false,
+  dots: true
+});
+
+
 // Play or Pause videos when in view
 $(window).scroll(function () {
   $('video').each(function () {
@@ -48,6 +74,28 @@ $(window).scroll(function () {
     }
   })
 });
+
+
+// Targets Modal
+
+var $triggerOn = document.querySelector('#open_targets_modal');
+var $triggerOff = document.querySelector('.button--close');
+var $modal   = document.querySelector('aside');
+
+function toggleModal(e){
+
+  e.preventDefault()
+  $modal.classList.toggle('is-open');
+
+  if ($('.targets_modal').hasClass('is-open')) {
+    $('body').css('overflow', 'hidden');
+  } else {
+    $('body').css('overflow', 'auto');
+  }
+}
+
+$triggerOn.addEventListener('click', toggleModal );
+$triggerOff.addEventListener('click', toggleModal );
 
 new Vivus('rr-logo', {
   type: 'async',

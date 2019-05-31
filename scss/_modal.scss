@@ -1,0 +1,99 @@
+/*
+  MODAL
+*/
+
+.targets_modal {
+
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    input {
+        font-size: 24px;
+        margin: 10px;
+        padding: 11px 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+
+    background: $white;
+    color: $black;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+
+    &.is-open {
+        max-height: 100%;
+    }
+
+    .button-primary {
+
+        &.submit > span {
+            font-size: 24px;
+            padding: 18px 30px;
+        }
+
+        &.button--close {
+            position: absolute;
+            right: 0;
+
+            i {
+                font-size: 44px;
+            }
+        }
+    }
+
+    .page-section {
+        min-height: 100vh;
+    }
+
+    .targets {
+
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+
+        &.hide {
+            opacity: 0;
+        }
+    }
+
+    .targets img {
+        height: calc(60vh - 150px);
+        width: auto;
+        margin: 0 auto;
+        /* it centers any block level element */
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+}
+
+/*
+    ANIMATION
+  */
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

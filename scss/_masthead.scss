@@ -1,8 +1,25 @@
 // Styling for the masthead
 header.masthead {
 
+  .cover-copy {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 34px;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    span {
+      font-weight: 100;
+    }
+    @media(max-width:768px) {
+      font-size: 24px;
+    }
+  }
+
   .cover {
-    
+    position: relative;
     bottom: 0;
     left: 0;
     overflow: hidden;
@@ -10,15 +27,17 @@ header.masthead {
     top: 0;
     z-index: 1;
     object-fit: cover;
+
   }
 
-  .cover img, .cover video {
+  .cover img,
+  .cover video {
     display: block;
     height: 100%;
     width: 100%;
     right: auto;
     z-index: 1;
-}
+  }
 
   text-align: center;
   color: white;
@@ -26,12 +45,14 @@ header.masthead {
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
+
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
     }
+
     .intro-heading {
       font-size: 50px;
       font-weight: 700;
@@ -40,17 +61,20 @@ header.masthead {
     }
   }
 }
+
 @media(min-width:768px) {
   header.masthead {
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
+
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
       }
+
       .intro-heading {
         font-size: 75px;
         font-weight: 700;

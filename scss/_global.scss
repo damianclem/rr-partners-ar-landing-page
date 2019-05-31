@@ -131,6 +131,13 @@ $transition-ease: ease;
     // }
   }
 
+  .iframe-video {
+    width: 100%; height: 80vh;
+    @media (max-width: 992px) {
+      height: 50vh
+    }
+  }
+
   .container {
     height: 100%;
 
@@ -321,6 +328,30 @@ img::-moz-selection {
   stroke-miterlimit: 10;
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
+}
+
+.slick-arrow {
+    font-size: 60px;
+    position: absolute;
+    bottom: 50%;
+    color: $black;
+    border: 0;
+    background: none;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-next {
+    right: 20px;
+    text-align: right;
+}
+
+.slick-prev:hover:after,
+.slick-next:hover:after {
+    color: #7e7e7e;
 }
 
 .slick-dots {

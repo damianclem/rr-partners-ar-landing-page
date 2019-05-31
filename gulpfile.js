@@ -37,10 +37,10 @@ function browserSync(done) {
 }
 
 // BrowserSync reload
-function browserSyncReload(done) {
-  browsersync.reload();
-  done();
-}
+// function browserSyncReload(done) {
+//   browsersync.reload();
+//   done();
+// }
 
 // Clean vendor
 function clean() {
@@ -115,7 +115,7 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch("./js/agency.js", js);
-  gulp.watch("./**/*.html", browserSyncReload);
+  // gulp.watch("./**/*.html", browserSyncReload);
 }
 
 // Define complex tasks
