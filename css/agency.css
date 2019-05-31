@@ -523,7 +523,6 @@ img::-moz-selection {
   left: 0;
   z-index: 1050;
   width: 100%;
-  height: 100%;
 }
 
 .targets_modal h3 {
@@ -581,8 +580,6 @@ img::-moz-selection {
 .targets_modal .targets img {
   height: calc(90vh - 150px);
   position: relative;
-  width: 100%;
-  max-width: 800px;
   margin: 0 auto;
 }
 
