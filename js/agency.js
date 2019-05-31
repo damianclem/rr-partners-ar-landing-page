@@ -1,7 +1,7 @@
 (function ($) {
   "use strict"; // Start of use strict
 
-  $('#submitpassword').on('click', function(){
+  $('#submitpassword').on('click touchend', function(){
 
     var password = $('#password').val();
 
@@ -94,8 +94,8 @@ function toggleModal(e){
   }
 }
 
-$triggerOn.addEventListener('click', toggleModal );
-$triggerOff.addEventListener('click', toggleModal );
+$triggerOn.addEventListener('click touchend', toggleModal );
+$triggerOff.addEventListener('click touchend', toggleModal );
 
 new Vivus('rr-logo', {
   type: 'async',
