@@ -132,9 +132,9 @@ $transition-ease: ease;
   }
 
   .iframe-video {
-    width: 100%; height: 80vh;
+    width: 100%; height: 500px;
     @media (max-width: 992px) {
-      height: 50vh
+      height: 300px
     }
   }
 

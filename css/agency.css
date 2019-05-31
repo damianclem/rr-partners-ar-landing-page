@@ -153,12 +153,12 @@ h6 {
 
 .page-section .iframe-video {
   width: 100%;
-  height: 80vh;
+  height: 500px;
 }
 
 @media (max-width: 992px) {
   .page-section .iframe-video {
-    height: 50vh;
+    height: 300px;
   }
 }
 
