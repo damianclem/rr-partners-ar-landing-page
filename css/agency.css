@@ -579,10 +579,9 @@ img::-moz-selection {
 }
 
 .targets_modal .targets img {
-  height: calc(60vh - 150px);
+  height: calc(90vh - 150px);
   width: auto;
   margin: 0 auto;
-  /* it centers any block level element */
 }
 
 .targets_modal .center-text {
