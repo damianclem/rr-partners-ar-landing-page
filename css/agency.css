@@ -579,10 +579,8 @@ img::-moz-selection {
 }
 
 .targets_modal .targets img {
+  height: calc(90vh - 150px);
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   height: auto;
   width: 100%;
   max-width: 800px;
