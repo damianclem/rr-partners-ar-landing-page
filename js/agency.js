@@ -37,6 +37,29 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  var $triggerOn = $('#open_targets_modal');
+  var $triggerOff = $('.button--close');
+  var $modal   = $('aside');
+  
+  function toggleModal(e){
+    
+    console.log('click');
+
+    e.preventDefault()
+    $modal.toggleClass('is-open');
+  
+    if ($('.targets_modal').hasClass('is-open')) {
+      $('body').css('overflow', 'hidden');
+    } else {
+      $('body').css('overflow', 'auto');
+    }
+  }
+  
+  $triggerOn.on('click', toggleModal );
+  
+  $triggerOff.on('click', toggleModal );
+  
+
 })(jQuery); // End of use strict
 
 
@@ -78,28 +101,6 @@ $(window).scroll(function () {
 
 // Targets Modal
 
-var $triggerOn = $('#open_targets_modal');
-var $triggerOff = $('.button--close');
-var $modal   = $('aside');
-
-function toggleModal(e){
-
-  console.log('clicked');
-
-  e.preventDefault()
-  $modal.toggleClass('is-open');
-
-  if ($('.targets_modal').hasClass('is-open')) {
-    $('body').css('overflow', 'hidden');
-  } else {
-    $('body').css('overflow', 'auto');
-  }
-}
-
-$triggerOn.on('click touchstart', toggleModal );
-
-$triggerOff.on('click touchstart', toggleModal );
-
 // new Vivus('rr-logo', {
 //   type: 'async',
 //   duration: 100,
@@ -108,8 +109,8 @@ $triggerOff.on('click touchstart', toggleModal );
 //   $('#rr-logo').fadeOut(200);
   $('.preloader-container').addClass('is-over');
 
-//   setTimeout(function(){
-//     $('.preloader-container').fadeOut(200);
-//   }, 1500)
+  setTimeout(function(){
+    $('.preloader-container').fadeOut(200);
+  }, 1500)
 
 // });
