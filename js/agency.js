@@ -5,7 +5,7 @@
 
     var password = $('#password').val();
 
-    if (password === 'brian') {
+    if (password === 'brian' || password === 'Brian') {
 
       $('.enter-exp').fadeOut();
       $('.targets').removeClass('hide');
