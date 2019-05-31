@@ -581,7 +581,6 @@ img::-moz-selection {
 .targets_modal .targets img {
   height: calc(90vh - 150px);
   position: relative;
-  height: auto;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
